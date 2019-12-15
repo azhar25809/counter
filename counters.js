@@ -11,7 +11,7 @@ class Counters extends Component {
         ]
     }
     deleteHandler = (counterId) => {
-        console.log('delete clicked')
+        console.log('delete clicked', counterId)
         const counters = this.state.counters.filter(c => c.id !== counterId)
         this.setState({counters})
     }
